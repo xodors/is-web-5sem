@@ -52,6 +52,13 @@ body {
     color: #bcb8b1;
 }
 
+
+.menu a.active {
+    color: #bcb8b1;
+    font-weight: bold;
+
+}
+
 .a {
     text-decoration: none;
 }
@@ -114,20 +121,6 @@ main {
     font-size: 0.8em;
 }
 
-@media screen and (max-width: 1100px) {
-    .albums ul {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-    }
-}
-
-@media screen and (max-width: 900px) {
-    .albums ul {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-    }
-}
-
 
 .about-us {
     text-align: center;
@@ -165,32 +158,34 @@ footer {
 }
 
 .shipping {
-    height: 80vh;
+    height: 68vh;
 }
 
-table {
+.shipping-table {
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    margin-left: 220px;
-    text-align: center;
-    top: 100px;
-    position: relative;
-    color: white;
-    display: table;
-    border-collapse: collapse;
-    background-color: #3a3a3a;
-}
-
-.th, td, tr {
-    border: 1px solid white;
-    text-align: center;
     font-family: 'Inter', sans-serif;
-    padding: 30px;
-    font-size: 1.2em;
+    color: white;
+    background-color: #3a3a3a;
+    font-size: 1em;
 }
 
-table > *:nth-child(2n + 1) {
-    background-color: dimgray;
+.shipping-table-row {
+    display: flex;
+    width: 100%;
 }
+
+.shipping-table-cell {
+    flex: 3;
+    padding: 10px;
+    border: 1px solid dimgray;
+    height: 30px;
+}
+
 
 @media screen and (max-width: 1200px) {
     header {
@@ -223,6 +218,10 @@ table > *:nth-child(2n + 1) {
 
     .banner1 blockquote cite a {
         font-size: 1em;
+    }
+
+    .shipping-table{
+        font-size: 0.8em;
     }
 }
 
@@ -261,4 +260,9 @@ table > *:nth-child(2n + 1) {
         height: 50px;
         width: 120px;
     }
+
 }
+
+
+
+

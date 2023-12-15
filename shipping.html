@@ -13,7 +13,7 @@
 <link rel="stylesheet" href="shop.css">
 
 <header>
-    <div class="logo"><a href=""><img src="img/logo.png" height="70" width="160" alt="Логотип"></a></div>
+    <div class="logo"><a href="index.html"><img src="img/logo.png" height="70" width="160" alt="Логотип"></a></div>
     <nav class="menu">
         <ul>
             <li><a href="index.html">О нас</a></li>
@@ -25,42 +25,44 @@
 </header>
 
 <main>
-    <div class="shipping">
-        <table>
-            <thead>
-            <tr>
-                <th>Параметры</th>
-                <th>СДЭК</th>
-                <th>Почта России</th>
-                <th>Boxberry</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>Сроки отправки</td>
-                <td>1-3 дня</td>
-                <td>1-2 дня</td>
-                <td>2-3 дня</td>
-            </tr>
-            <tr>
-                <td>Сроки доставки</td>
-                <td>2-7 дней</td>
-                <td>6-8 дней</td>
-                <td>7-10 дней</td>
-            </tr>
-            <tr>
-                <td>Стоимость</td>
-                <td>200-400₽</td>
-                <td>300-500₽</td>
-                <td>400-500₽</td>
-            </tr>
-            </tbody>
-        </table>
-    </div>
+    <section class="shipping">
+        <div class="shipping-table">
+            <div class="shipping-table-row">
+                <div class="shipping-table-cell">Перевозчик</div>
+                <div class="shipping-table-cell">СДЭК</div>
+                <div class="shipping-table-cell">Почта России</div>
+                <div class="shipping-table-cell">Boxberry</div>
+            </div>
+            <div class="shipping-table-row">
+                <div class="shipping-table-cell">Cроки отправки</div>
+                <div class="shipping-table-cell">1-3 дня</div>
+                <div class="shipping-table-cell">1-2 дня</div>
+                <div class="shipping-table-cell">2-3 дня</div>
+            </div>
+            <div class="shipping-table-row">
+                <div class="shipping-table-cell">Сроки доставки</div>
+                <div class="shipping-table-cell">2-7 дней</div>
+                <div class="shipping-table-cell">6-8 дней</div>
+                <div class="shipping-table-cell">7-10 дней</div>
+            </div>
+            <div class="shipping-table-row">
+                <div class="shipping-table-cell">Стоимость</div>
+                <div class="shipping-table-cell">200-400₽</div>
+                <div class="shipping-table-cell">300-500₽</div>
+                <div class="shipping-table-cell">400-500₽</div>
+            </div>
+        </div>
+    </section>
 </main>
 
-<footer class="footer-shipping">
+<footer id="footer">
     <a href="#"><img src="img/ig.PNG" width="35" height="35" alt="Instagram"></a>
     <a href="#"><img src="img/tg.PNG" width="34" height="34" alt="Telegram"></a>
     <p>MADE BY DANIIL DORONIN, @XODORS</p>
 </footer>
+
+<script src="time.js"></script>
+<script src="active.js"></script>
+
+</body>
+</html>
