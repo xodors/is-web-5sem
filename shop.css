@@ -50,13 +50,13 @@ body {
 .menu ul li a:hover {
     text-decoration: none;
     color: #bcb8b1;
+    cursor: pointer;
 }
 
 
 .menu a.active {
     color: #bcb8b1;
     font-weight: bold;
-
 }
 
 .a {
@@ -157,33 +157,90 @@ footer {
     color: white;
 }
 
-.shipping {
-    height: 68vh;
-}
-
 .shipping-table {
     margin-top: 100px;
-    margin-left: 50px;
-    margin-right: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 30px;
+}
+
+.shipping-table thead, tbody, tr {
+    display: contents;
+}
+
+.shipping-table th {
+    background-color: #a89176;
+}
+
+.shipping-table td, th {
+    padding: 20px;
+    text-align: center;
+    font-size: 1rem;
+    background-color: #3f3f3f;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    border: 1px solid dimgray;
+}
+
+form {
+    text-align: center;
+    margin: 0 30px 40px;
+    padding-top: 5px;
+    padding-bottom: 20px;
     font-family: 'Inter', sans-serif;
     color: white;
-    background-color: #3a3a3a;
+    background-color: #8d9481;
+    outline: 2px solid black;
+    border-radius: 10px;
+}
+
+form p {
+    font-size: 1.5rem;
+}
+
+.form #output {
+    list-style-type: none;
+    background-color: #6c7066;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    color: white;
     font-size: 1em;
 }
 
-.shipping-table-row {
-    display: flex;
-    width: 100%;
+.form #input {
+    width: 250px;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
 }
 
-.shipping-table-cell {
-    flex: 3;
-    padding: 10px;
-    border: 1px solid dimgray;
-    height: 30px;
+.form #send {
+    background-color: #726966;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 8px;
+    font-family: 'Inter', sans-serif;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+.form #delete {
+    background-color: #780000;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 8px;
+    font-family: 'Inter', sans-serif;
+    border-radius: 5px;
+    font-size: 0.9em;
+
+.comments-title {
+    font-family: 'Inter', sans-serif;
+    color: white;
+    text-align: center;
 }
 
 
@@ -220,8 +277,22 @@ footer {
         font-size: 1em;
     }
 
-    .shipping-table{
+    .shipping-table td, th{
         font-size: 0.8em;
+    }
+
+    .form p {
+        font-size: 1rem;
+    }
+
+    .form button {
+        padding: 5px;
+        font-size: 0.8em;
+    }
+
+    .form #input{
+        width: 180px;
+        padding: 5px;
     }
 }
 
@@ -260,7 +331,6 @@ footer {
         height: 50px;
         width: 120px;
     }
-
 }
 
 
