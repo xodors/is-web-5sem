@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Vault | Vinyl Store</title>
-    <link rel="icon" href="img/icon.png" type="image/png">
+    <link rel="icon" href="img/icon.PNG" type="image/png">
     <meta name="description"
           content="Уютный онлайн-магазин виниловых пластинок в Санкт-Петербурге с доставкой по всей России!">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -16,6 +16,7 @@
 
 <body>
 <link rel="stylesheet" href="shop.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
 <header>
     <div class="logo"><a href="index.html"><img src="img/logo.png" height="70" width="160" alt="Логотип"></a></div>
@@ -79,7 +80,35 @@
             Мы создали этот проект с любовью к музыке и вместе с нашими покупателями формируем сообщество,
             где каждый сможет найти что-то по душе и разделить эту радость с единомышленниками.</p>
     </section>
-
+    <section class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img class="swiper-image" src="img/slide1.jpg" alt="Aesthetic">
+                <p class="swiper-description">
+                    I put the radio on, hold you tight in my mind,<br>
+                    isn't strange that you're not here with me.
+                </p>
+            </div>
+            <div class="swiper-slide">
+                <img class="swiper-image" src="img/slide2.jpg" alt="Vinyl">
+                <p class="swiper-description">
+                    I'm putting all the lights on and the television.<br>
+                    Trying to transmit, can you hear me?
+                </p>
+            </div>
+            <div class="swiper-slide">
+                <img class="swiper-image" src="img/slide3.jpg" alt="Music">
+                <p class="swiper-description">
+                    Ground control to Major Tom.<br>
+                    Can you hear me all night long?
+                </p>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-scrollbar"></div>
+    </section>
 </main>
 <footer class="footer">
     <a href="#"><img src="img/ig.PNG" width="35" height="35" alt="Instagram"></a>
@@ -88,6 +117,7 @@
 </footer>
 
 <script src="active.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="swiper.js" defer></script>
 </body>
 </html>
