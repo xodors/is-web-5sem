@@ -4,69 +4,120 @@
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>The Melody Vault</title>
-    <link rel="icon" href="img/icon.JPEG" type="image/png">
+    <title>Vault | Vinyl Store</title>
+    <link rel="icon" href="img/icon.PNG" type="image/png">
     <meta name="description"
           content="Уютный онлайн-магазин виниловых пластинок в Санкт-Петербурге с доставкой по всей России!">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="keywords"
-          content="винил, пластинки, проигрыватель, музыкальный, виниловая пластинка, Лана Дель Рей, виниловый, купить 180- 200- граммовый,
-           доставка по всей России, поп, рок, классика, винтаж, джаз, блюз, The Melody Vault магазин ">
+          content="винил, пластинки, проигрыватель, музыкальный, виниловая пластинка, Лана Дель Рей, виниловый,
+          купить 180- 200- граммовый, доставка по всей России, поп, рок, классика, винтаж, джаз, блюз, Vault магазин ">
 </head>
 
 <body>
 <link rel="stylesheet" href="shop.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
 <header>
-    <div class="logo"><a href=""><img src="img/logo.png" height="60" width="320" alt="Логотип"></a></div>
+    <div class="logo"><a href="index.html"><img src="img/logo.png" height="70" width="160" alt="Логотип"></a></div>
     <nav class="menu">
         <ul>
-            <li><a href="">О нас</a></li>
-            <li><a href="">Каталог</a></li>
-            <li><a href="">Доставка</a></li>
-            <li><a href="">Корзина</a></li>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Каталог</a></li>
+            <li><a href="shipping.html">Доставка</a></li>
+            <li><a href="#">Корзина</a></li>
         </ul>
     </nav>
-    <p></p>
 </header>
 <main>
     <section class="banner1">
-        <div class="quote">
-            <blockquote cite="https://citaty.info/music/lana-del-rey?page=1">
-                <q>Not all those who wander are lost. It's just wanderlust.</q><br/>
-                <cite><a href="https://citaty.info/music/lana-del-rey?page=1"><i>Lana Del Rey</i></a></cite>
-            </blockquote>
-        </div>
+        <blockquote cite="https://citaty.info/music/lana-del-rey?page=1">
+            <q>Not all those who wander are lost. It's just wanderlust.</q><br/>
+            <cite><a href="https://citaty.info/music/lana-del-rey?page=1"><i>Lana Del Rey</i></a></cite>
+        </blockquote>
     </section>
-    <section>
-        <div class="new">
-            <p><b>НОВОЕ ПОСТУПЛЕНИЕ</b></p>
-            <span>
-                <picture><img src="img/vinyl1.jpg" width="200" height="200" alt="Ultraviolence"></picture>
-                <p>Ultraviolence</p>
-            </span>
-            <span>
-                <picture><img src="img/vinyl2.webp" width="200" height="200" alt="Harry's House"></picture>
-                <p>Harry's House</p>
-            </span>
-            <span>
-                <picture><img src="img/vinyl3.jpg" width="200" height="200" alt="Midnights"></picture>
-                <p>Midnights</p>
-            </span>
-            <span>
-                <picture><img src="img/vinyl3.webp" width="200" height="200" alt="Positions"></picture>
-                <p>Positions</p>
-            </span>
+
+    <div class="albums">
+        <h2>ВЫБОР ПОКУПАТЕЛЕЙ</h2>
+        <ul>
+            <li>
+                <img src="img/vinyl1.jpg" width="200" height="200" alt="Ultraviolence">
+                <p>Ultraviolence – Lana Del Rey</p>
+            </li>
+            <li>
+                <img src="img/vinyl2.webp" width="200" height="200" alt="Harry's House">
+                <p>Harry's House – Harry Styles</p>
+            </li>
+            <li>
+                <img src="img/vinyl3.jpg" width="200" height="200" alt="Midnights">
+                <p>Midnights – Taylor Swift</p>
+            </li>
+            <li>
+                <img src="img/vinyl4.webp" width="200" height="200" alt="Positions">
+                <p>Positions – Ariana Grande</p>
+            </li>
+            <li>
+                <img src="img/vinyl5.jpeg" width="200" height="200" alt="Myopia">
+                <p>Myopia – Agnes Obel</p>
+            </li>
+            <li>
+                <img src="img/vinyl6.jpg" width="200" height="200" alt="Melodrama">
+                <p>Melodrama – Lorde</p>
+            </li>
+            <li>
+                <img src="img/vinyl7.jpg" width="200" height="200" alt="GUTS">
+                <p>GUTS – Olivia Rodrigo</p>
+            </li>
+            <li>
+            <img src="img/vinyl8.png" width="200" height="200" alt="After Hours">
+            <p>After Hours – The Weeknd </p>
+            </li>
+        </ul>
+    </div>
+    <section class="about-us">
+        <h2>О НАС</h2>
+        <p>Vault — это уютный онлайн-магазин виниловых пластинок из Санкт-Петербурга.
+            Мы создали этот проект с любовью к музыке и вместе с нашими покупателями формируем сообщество,
+            где каждый сможет найти что-то по душе и разделить эту радость с единомышленниками.</p>
+    </section>
+    <section class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img class="swiper-image" src="img/slide1.jpg" alt="Aesthetic">
+                <p class="swiper-description">
+                    I put the radio on, hold you tight in my mind,<br>
+                    isn't strange that you're not here with me.
+                </p>
+            </div>
+            <div class="swiper-slide">
+                <img class="swiper-image" src="img/slide2.jpg" alt="Vinyl">
+                <p class="swiper-description">
+                    I'm putting all the lights on and the television.<br>
+                    Trying to transmit, can you hear me?
+                </p>
+            </div>
+            <div class="swiper-slide">
+                <img class="swiper-image" src="img/slide3.jpg" alt="Music">
+                <p class="swiper-description">
+                    Ground control to Major Tom.<br>
+                    Can you hear me all night long?
+                </p>
+            </div>
         </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-scrollbar"></div>
     </section>
 </main>
 <footer class="footer">
-    <pre class="itmo"><code></code>
-        ╔══╗
-        ╚╗╔╝
-        ╔╝(¯`v´¯)
-        ╚══`.¸.[ITMO]
-    </pre>
-    <p><small>2023 Daniil Doronin</small></p>
+    <a href="#"><img src="img/ig.PNG" width="35" height="35" alt="Instagram"></a>
+    <a href="#"><img src="img/tg.PNG" width="34" height="34" alt="Telegram"></a>
+    <p>MADE BY DANIIL DORONIN, @XODORS</p>
 </footer>
+
+<script src="active.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="swiper.js" defer></script>
 </body>
 </html>
